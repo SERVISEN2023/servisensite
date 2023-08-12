@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription au Programme</title>
+    <style>
+        /* Réinitialisation des styles par défaut */
+        body, h1, h2, h3, p, label, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9; /* Couleur de fond légèrement grise */
+            color: #333; /* Texte noir */
+            margin: 0;
+        }
+
+        header {
+            background-color: #007bff; /* Bleu vif pour l'en-tête */
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 120vh;
+        }
+
+        section {
+            width: 580px; /* Largeur du formulaire agrandie */
+            margin-bottom: 2rem;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 2rem;
+            border: 1px solid #ddd; /* Légère bordure grise */
+            border-radius: 4px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .required {
+            color: blue; /* Rouge pour indiquer les champs obligatoires */
+        }
+
+        form input {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contrat-container {
+            max-height: 260px; /* Hauteur maximale du conteneur avec barre de défilement */
+            overflow-y: auto; /* Barre de défilement verticale si nécessaire */
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contrat {
+            font-size: 16px;
+        }
+
+        form input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        form button {
+            background-color: #007bff; /* Bleu vif pour le bouton */
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #0056b3; /* Bleu vif plus foncé au survol */
+        }
+
+        footer.logo {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Afficher les éléments E-mail et Numéro de téléphone en ligne */
+        .form-row {
+            display: flex;
+            align-items: center;
+        }
+ .ins
+ {
+    color: #0056b3;
+ }
+        /* Espacement entre E-mail et Numéro de téléphone */
+        .form-row label,
+        .form-row input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Programme de Soutien aux Restauratrices</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="ins">Inscription</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <label for="Prenom" class="required">Prénom</label>
+                <input type="text" id="Prenom" name="Prenom" placeholder="Prénom obligatoire" required>
+
+                <label for="nom" class="required">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom obligatoire" required>
+             
+                <div class="form-row">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail Facultatif">
+                </div>
+
+                <div class="form-row">
+                    <label for="telephone" class="required">Numéro de téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Numéro de téléphone obligatoire" required>
+                </div>
+
+                <label for="restaurant" class="required">Nom du Restaurant</label>
+                <input type="text" id="restaurant" name="restaurant" placeholder="Nom du Restaurant obligatoire" required>
+
+                <label for="photo_profil" class="required">Photo du Local ou de la Place (JPG)</label>
+                <input type="file" id="photo_profil" name="photo_profil" accept=".jpg"  required>
+
+                <label for="carte_identite" class="required">Photo de carte d'identité (Recto) (JPG)</label>
+                <input type="file" id="carte_identite" name="carte_identite" accept=".jpg"  required>
+
+                <label for="carte_identite" class="required">Photo de carte d'identité (Verso) (JPG)</label>
+                <input type="file" id="carte_identite" name="carte_identite" accept=".jpg"  required>
+
+                <h3>Contrat de Soutien aux Restauratrices</h3>
+                <div class="contrat-container">
+                    <div class="contrat">
+                        <p> 
+                            <p>
+                                <em>KaneGroupInvest</em> s'engage à soutenir votre restaurant en garantissant le prix des denrées alimentaires selon le  tarif <strong>coché:</strong> <br>
+                                  <p>
+                                    <strong>Veuillez cocher le tarif qui vous intérèsse :</strong>
+                                  </p>
+                                <ul>
+                                    <li><strong> 190 000 Fcfa/mois : Le Déjeuner unqiuement,</strong></li>
+                                    <li><strong>280 000 Fcfa/mois : ( Petit Déjeuner + Déjeuner ) unqiuement,</strong></li>
+                                    <li><strong>300 000 Fcfa/mois : Le Dinner unqiuement,</strong></li>
+                                    <li><strong>580 000 Fcfa/mois : Petit Déjeuner + Déjeuner + Dinner,</strong></li>
+                                 </ul>selon votre budget mensuel du restaurant.
+                                </p>  
+                           <p>
+                            <em>KaneGroupInvest</em> vous prie de lire attentivement le contrat ci-
+                            dessous et de le signer:
+                           </p>  
+<ol>
+    <li>La socièté <em>KaneGroupInvest</em> va fournir un montant de 190 000 Fcfa à 580 000 Fcfa par mois, selon votre choix de <strong>tarif</strong> , à la restauratrice pour soutenir son activité pour une durée <em color="Bleu">de 6 mois à 12 mois</em> à compter de la date de signature du contrat.<li>
+
+    <li>La socièté <em>KaneGroupInvest</em> va recevoir un versement <strong>quotidien de 12 000 Fcfa à 25 000 Fcfa</strong>, selon l'investissement réçu , de ma part pour rembourser l'investissement pour une durée <strong>de 6 à 12 mois</strong> à compter de la date de signature du contrat.</li>
+    
+    <li>La socièté <em>KaneGroupInvest</em> va assurer une assistance financière régulière <strong>( 190 000 à 580 000 Fcfa par mois)</strong> pour maintenir la stabilité économique du restaurant, en respectant nos engagements mutuels pendant la durée du contrat.</li>
+    
+    <li>La socièté <em>KaneGroupInvest</em> va respecter la confidentialité des informations fournies par la restauratrice concernant son activité, en maintenant la discrétion sur ces informations pendant la durée du contrat.</li>
+    
+    <li>Moi restauratrice, je réaliserai les paiements de manière ponctuelle et régulière, à travers les plate-formes numeriques, pour garantir un fonctionnement optimal du restaurant, en honorant notre calendrier de paiement pendant la durée du contrat, de la manière suivante:</li><br>
+     <ol>
+        <li><strong>Déjeuner unqiuement: versement de <em class="price"> 12 000 Fcfa</em> par jour.</strong></li>
+        <li><strong>( Petit Déjeuner + Déjeuner ) unqiuement: versement de <em class="price">15 000 Fcfa</em> par jour.</strong></li>
+        <li><strong>Dinner unqiuement: versement de <em class="price">16 000 Fcfa</em> par jour.</strong></li>
+        <li><strong>Petit Déjeuner + Déjeuner + Dinner: versement de <em class="price">25 000 Fcfa</em> par jour.</strong></li>
+     </ol><br>
+    <li>Moi restauratrice, je suis d'accord que la durée du contrat soit d'une durée de 6 à 12 mois selon mon choix.</li>
+
+    <li>la socièté <em>KaneGroupInvest</em> va mettre à la disposition de la restauratrice d'une communication ouverte et transparente pour répondre à ses besoins et préoccupations, en favorisant une relation de confiance pendant la durée du contrat.</li>
+
+    <li>Pas de possibilités de renogocier les prix, une fois que le contrat est signé.</li>
+
+    <li><strong>Toute tentative de désaccord durant la durée du contrat, sera l'objet d'une poursuite judiciaire.</strong></li>
+
+    <li>Une fois que la durée du contrat est expirée, il sera possible de renégocier: soit de <strong>CONTINUER</strong> avec <em>KaneGroupInvest</em> ou <strong>D'INTERROMPRE le Contrat.</strong> </li>
+
+    <li> En signant ce contrat, je m'engage à respecter ces douze points et à soutenir activement la socièté <em>KaneGroupInvest</em> en lui fournissant un montant, qui varie selon le tarif, de 12 000 à 25 000 Fcfa par jour, et en recevant en retour un versement mensuel de 190 000 à 580 000 Fcfa pour l'achat des denrées alimentaires, tout en maintenant notre accord mutuel pendant la durée de 6 12 mois à compter de la date de signature du contrat.</li>
+ </ol>
+                        </p>
+                        <footer class="accept"> 
+                        <label for="accepter_contrat">
+                        <button type="submit" name="accepter"> <em>Cliquez-ici pour signer le contrat</em></button>
+                        </label>
+                    </footer>
+                    </div>
+                </div>
+
+                <button type="submit" name="accepter"> <em>S'inscrire</em></button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="logo">
+        <p>Tous droits réservés &copy; 2023 - <em>KaneGroupInvest</em>, une partie de l'entreprise <em>SERVISEN</em>, est une socièté d'investissement soutenant les Restauratrices.</p>
+    </footer>
+</body>
+</html>
